@@ -11,6 +11,7 @@ network:
     - defaults
     - github.blog
     - github.com
+    - awesome-copilot.github.com
 tools:
   edit:
   web-fetch:
@@ -28,18 +29,19 @@ Keep `site/content/github-info.md` useful and current for developers. Changes mu
 ## Research
 
 1. Read `notes/mona-notes.md` and the current `site/content/github-info.md` before drafting.
-2. Use `web-fetch` to read both official source indexes:
+2. Use `web-fetch` to read all three source indexes:
    - https://github.blog/latest/
    - https://github.blog/changelog/
-3. Find recent, relevant updates that help developers learn GitHub faster. Verify each selected item's title, date, details, and canonical URL from its linked official article before summarizing it. Prefer items not already covered in `site/content/github-info.md`.
-4. Do not invent details or dates. If either index cannot be fetched, do not claim to have reviewed it; use only verifiable information and report the limitation in the pull request description.
+  - https://awesome-copilot.github.com/workflows/
+3. Find recent, relevant GitHub Blog and Changelog updates, along with useful Awesome Copilot workflows that help developers learn or use GitHub faster. Verify each selected item's title, details, and canonical URL from its linked official source before summarizing it. Prefer items not already covered in `site/content/github-info.md`.
+4. Do not invent details or dates. If a source index cannot be fetched, do not claim to have reviewed it; use only verifiable information and report the limitation in the pull request description.
 
 ## Update
 
 - Edit only `site/content/github-info.md`.
 - Preserve Mona's editorial angle and existing homepage themes.
 - Maintain a `## Latest GitHub Updates` section after the editorial angle. Include at most three recent items, newest first, and remove entries that are no longer among the most useful recent updates.
-- Give each item a `###` heading with the official title, one short practical summary, and a plain-text source line in this format: `Source: GitHub Blog | Month D, YYYY | https://github.blog/...` or `Source: GitHub Changelog | Month D, YYYY | https://github.blog/changelog/...`.
+- Give each item a `###` heading with the official title, one short practical summary, and a plain-text source line. For dated posts, use `Source: GitHub Blog | Month D, YYYY | https://github.blog/...` or `Source: GitHub Changelog | Month D, YYYY | https://github.blog/changelog/...`. For workflow listings, use `Source: Awesome Copilot Workflows | https://awesome-copilot.github.com/workflows/...`.
 - Keep summaries concise, attribute every item to its source, and preserve valid Markdown that the site's content parser can read.
 - If there are no useful new updates and the file needs no correction, leave it unchanged and do not open a pull request.
 
