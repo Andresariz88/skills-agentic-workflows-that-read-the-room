@@ -1,8 +1,8 @@
 ---
 name: update-github-info
 description: Keep Mona's GitHub Info page current with practical updates from official GitHub sources.
-engine: codex
-model: copilot/gpt-6-luna
+engine: copilot
+model: auto
 on:
   schedule: daily
   workflow_dispatch:
